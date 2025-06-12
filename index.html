@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Search and Export -->
+  <div id="controls">
+    <input type="text" id="search-input" placeholder="🔍 Search tasks..." />
+    <button id="download-csv">📥 Download CSV</button>
+  </div>
+
+  <!-- Main To-Do List Container -->
+  <div class="main-box">
+    <h2>📝 <b>To-Do List</b></h2>
+
+    <!-- Task Input Row -->
+    <div class="input-row">
+      <input type="text" id="task-input" placeholder="Enter a task" />
+      <button id="add-btn">Add Task</button>
+    </div>
+
+    <!-- Date & Time Row -->
+    <div class="input-row">
+      <select id="day-select">
+        <option value="">Day</option>
+        <script>
+          for (let i = 1; i <= 31; i++) {
+            document.write(`<option value="${i}">${i}</option>`);
+          }
+        </script>
+      </select>
+
+      <select id="month-select">
+        <option value="">Month</option>
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+      </select>
+
+      <select id="year-select">
+        <option value="">Year</option>
+        <script>
+          const currentYear = new Date().getFullYear();
+          for (let y = currentYear; y <= currentYear + 10; y++) {
+            document.write(`<option value="${y}">${y}</option>`);
+          }
+        </script>
+      </select>
+
+      <input type="time" id="time-input" placeholder="Time" />
+    </div>
+
+    <!-- Hidden Input for Edit Index -->
+    <input type="hidden" id="edit-index" />
+
+    <!-- Task Cards -->
+    <div id="task-list"></div>
+  </div>
+
+  <!-- Script Link -->
+  <script src="script.js"></script>
+</body>
+</html>
