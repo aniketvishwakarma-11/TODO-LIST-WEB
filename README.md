@@ -73,7 +73,7 @@ This app uses the browser’s `localStorage` to save your tasks. You don’t nee
 Created by **Aniket Vishwakarma**
 
 📧 Email: [aniketvis675@gmail.com](mailto:aniketvis675@gmail.com)  
-🌐 GitHub: [github.com/yourusername](https://github.com/aniketvishwakarma11)   
+🌐 GitHub: [github.com/yourusername](https://github.com/aniketvishwakarma-11)   
 💬 Open to collaboration and contributions!
 
 ---
