@@ -5,7 +5,7 @@ It allows users to manage daily tasks easily with features such as date and time
 
 ---
 
-## 📸 Screenshots
+## 📸 Images
 
 ### 1. 🔲 Before Adding Any Tasks
 > A clean interface ready for new tasks.
